@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+  <div id="calculadora">
+    <div id="pantalla">
+      <p id="textoPantalla"></p>
+    </div>
+    <div id="teclado">
+      <div id="nums">
+        <button id="b9" onclick="writeNum(9)">9</button>
+        <button id="b8" onclick="writeNum(8)">8</button>
+        <button id="b7" onclick="writeNum(7)">7</button>
+        <button id="b6" onclick="writeNum(6)">6</button>
+        <button id="b5" onclick="writeNum(5)">5</button>
+        <button id="b4" onclick="writeNum(4)">4</button>
+        <button id="b3" onclick="writeNum(3)">3</button>
+        <button id="b2" onclick="writeNum(2)">2</button>
+        <button id="b1" onclick="writeNum(1)">1</button>
+        <button id="ce" onclick="clearScreen()">C</button>
+        <button id="b0" onclick="writeNum(0)">0</button>
+        <button id="coma" onclick="coma()">,</button>
+      </div>
+      <div id="operations">
+        <button id="+" onclick="sumar()">+</button>
+        <button id="-" onclick="restar()">-</button>
+        <button id="*" onclick="multiplicar()">*</button>
+        <button id="/" onclick="writeNum('/'),dividir()">/</button>
+        <button id="=" onclick="igual()">=</button>
+      </div>
+    </div>
+  </div>
+<body>
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
